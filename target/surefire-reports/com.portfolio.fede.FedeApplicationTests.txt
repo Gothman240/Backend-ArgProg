@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.portfolio.fede.FedeApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.215 s - in com.portfolio.fede.FedeApplicationTests
