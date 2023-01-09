@@ -1,49 +1,48 @@
 package com.portfolio.fede.Entity;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
 @Entity
-public class Persona {
+public class Proyecto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    
+    private int Id;
+
     @NotNull
-    @Size(min = 1, max = 50, message = "no cumple con la longitud")
+    @Size(min = 1, max = 50, message = "No cumple con la longitud")
     private String nombre;
-    
+
     @NotNull
-    @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String apellido;
     private String descripcion;
 
-    @Size(min = 1, max = 255)
-    private String img;
+    private String link;
 
-    public Persona() {
+    private String imgP;
+
+    public Proyecto() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+
+    public Proyecto(String nombre, String descripcion, String link, String imgP) {
         this.nombre = nombre;
-        this.apellido = apellido;
         this.descripcion = descripcion;
-        this.img = img;
+        this.link = link;
+        this.imgP = imgP;
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        Id = id;
     }
 
     public String getNombre() {
@@ -54,14 +53,6 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public String getDescripcion() {
         return descripcion;
     }
@@ -70,11 +61,19 @@ public class Persona {
         this.descripcion = descripcion;
     }
 
-    public String getImg() {
-        return img;
+    public String getLink() {
+        return link;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getImgP() {
+        return imgP;
+    }
+
+    public void setImg(String imgP) {
+        this.imgP = imgP;
     }
 }
