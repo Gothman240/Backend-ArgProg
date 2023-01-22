@@ -24,17 +24,20 @@ public class Proyecto {
 
     private String link;
 
+    private String gitLink;
+
     private String imgP;
 
     public Proyecto() {
     }
 
 
-    public Proyecto(String nombre, String descripcion, String link, String imgP) {
+    public Proyecto(String nombre, String descripcion, String link, String imgP, String gitLink) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.link = link;
         this.imgP = imgP;
+        this.gitLink = gitLink;
     }
 
     public int getId() {
@@ -75,5 +78,13 @@ public class Proyecto {
 
     public void setImg(String imgP) {
         this.imgP = imgP;
+    }
+
+    public String getGitLink() {
+        return gitLink;
+    }
+
+    public void setGitLink(String gitLink) {
+        this.gitLink = gitLink;
     }
 }

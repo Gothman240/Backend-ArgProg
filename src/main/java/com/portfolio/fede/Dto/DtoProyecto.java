@@ -9,15 +9,18 @@ public class DtoProyecto {
     private String descripcion;
     private String link;
 
+    private String gitLink;
+
     private String imgP;
 
     public DtoProyecto() {
     }
 
-    public DtoProyecto(String nombre, String descripcion, String link, String imgP) {
+    public DtoProyecto(String nombre, String descripcion, String link, String imgP, String gitLink) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.link = link;
+        this.gitLink = gitLink;
         this.imgP = imgP;
     }
 
@@ -51,5 +54,13 @@ public class DtoProyecto {
 
     public void setImg(String imgP) {
         this.imgP = imgP;
+    }
+
+    public String getGitLink() {
+        return gitLink;
+    }
+
+    public void setGitLink(String gitLink) {
+        this.gitLink = gitLink;
     }
 }
