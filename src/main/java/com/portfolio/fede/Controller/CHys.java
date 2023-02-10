@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/skill")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliofront-73140.web.app")
 public class CHys {
 
     @Autowired
@@ -60,7 +60,7 @@ public class CHys {
             return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
         }
 
-        hys hYs = new hys(dtohys.getNombre(), dtohys.getPorcentaje(),dtohys.getIconSKill());
+        hys hYs = new hys(dtohys.getNombre(), dtohys.getPorcentaje(),dtohys.getIconskill());
         shys.save(hYs);
 
         return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
@@ -85,7 +85,7 @@ public class CHys {
         hys hYs = shys.getOne(id).get();
         hYs.setNombre(dtohys.getNombre());
         hYs.setPorcentaje(dtohys.getPorcentaje());
-        hYs.setIconSkill(dtohys.getIconSKill());
+        hYs.setIconskill(dtohys.getIconskill());
 
         shys.save(hYs);
         return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);

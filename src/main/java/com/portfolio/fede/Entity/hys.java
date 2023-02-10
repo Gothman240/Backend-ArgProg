@@ -18,15 +18,15 @@ public class hys {
     private String nombre;
     private int porcentaje;
 
-    private String iconSkill;
+    private String iconskill;
 
     public hys() {
     }
 
-    public hys(String nombre, int porcentaje, String iconSkill) {
+    public hys(String nombre, int porcentaje, String iconskill) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
-        this.iconSkill = iconSkill;
+        this.iconskill = iconskill;
     }
 
     public int getId() {
@@ -53,11 +53,11 @@ public class hys {
         this.porcentaje = porcentaje;
     }
 
-    public String getIconSkill() {
-        return iconSkill;
+    public String getIconskill() {
+        return iconskill;
     }
 
-    public void setIconSkill(String iconSkill) {
-        this.iconSkill = iconSkill;
+    public void setIconskill(String iconskill) {
+        this.iconskill = iconskill;
     }
 }

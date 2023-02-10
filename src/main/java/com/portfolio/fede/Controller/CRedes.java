@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/redes")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliofront-73140.web.app")
 public class CRedes {
 
     @Autowired
